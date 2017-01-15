@@ -1,0 +1,2547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_111" class="java.beans.XMLDecoder">
+ <object class="levels.Level">
+  <void property="boxList">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>8</int>
+        </void>
+        <void property="row">
+         <int>3</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>9</int>
+        </void>
+        <void property="row">
+         <int>3</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>9</int>
+        </void>
+        <void property="row">
+         <int>4</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>9</int>
+        </void>
+        <void property="row">
+         <int>5</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>5</int>
+        </void>
+        <void property="row">
+         <int>6</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>8</int>
+        </void>
+        <void property="row">
+         <int>6</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>6</int>
+        </void>
+        <void property="row">
+         <int>7</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Box">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>9</int>
+        </void>
+        <void property="row">
+         <int>7</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>@</char>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="characterList">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="levels.Character">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>9</int>
+        </void>
+        <void property="row">
+         <int>2</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>A</char>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="moveableMap">
+   <array class="[Llevels.Moveable;" length="10">
+    <void index="0">
+     <array class="levels.Moveable" length="12"/>
+    </void>
+    <void index="1">
+     <array class="levels.Moveable" length="12"/>
+    </void>
+    <void index="2">
+     <array class="levels.Moveable" length="12">
+      <void index="9">
+       <object class="levels.Character">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="levels.Moveable" length="12">
+      <void index="8">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="levels.Moveable" length="12">
+      <void index="9">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="levels.Moveable" length="12">
+      <void index="9">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="levels.Moveable" length="12">
+      <void index="5">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="levels.Moveable" length="12">
+      <void index="6">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Box">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>@</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="levels.Moveable" length="12"/>
+    </void>
+    <void index="9">
+     <array class="levels.Moveable" length="12"/>
+    </void>
+   </array>
+  </void>
+  <void property="targetList">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>1</int>
+        </void>
+        <void property="row">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>2</int>
+        </void>
+        <void property="row">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>1</int>
+        </void>
+        <void property="row">
+         <int>2</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>2</int>
+        </void>
+        <void property="row">
+         <int>2</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>1</int>
+        </void>
+        <void property="row">
+         <int>3</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>2</int>
+        </void>
+        <void property="row">
+         <int>3</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>1</int>
+        </void>
+        <void property="row">
+         <int>4</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>2</int>
+        </void>
+        <void property="row">
+         <int>4</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>1</int>
+        </void>
+        <void property="row">
+         <int>5</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="levels.Target">
+      <void property="position">
+       <object class="levels.Position2D">
+        <void property="column">
+         <int>2</int>
+        </void>
+        <void property="row">
+         <int>5</int>
+        </void>
+       </object>
+      </void>
+      <void property="represtive">
+       <char>o</char>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="unmoveableMap">
+   <array class="[Llevels.Unmoveable;" length="10">
+    <void index="0">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D"/>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>2</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>3</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>4</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Target">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>o</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>5</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>6</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>7</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>8</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void index="9">
+     <array class="levels.Unmoveable" length="12">
+      <void index="0">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>1</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="levels.Floor">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>2</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char> </char>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>3</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>4</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>5</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>6</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="7">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>7</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="8">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>8</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="9">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>9</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="10">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>10</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+      <void index="11">
+       <object class="levels.Wall">
+        <void property="position">
+         <object class="levels.Position2D">
+          <void property="column">
+           <int>11</int>
+          </void>
+          <void property="row">
+           <int>9</int>
+          </void>
+         </object>
+        </void>
+        <void property="represtive">
+         <char>#</char>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
