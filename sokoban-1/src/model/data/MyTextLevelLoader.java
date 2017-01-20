@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -30,13 +30,13 @@ public class MyTextLevelLoader extends AbstractLevelLoader
 			}
 		column++;
 		ans.add(line);
-		
+
 		}
 		Level level = new Level(column,row);
 		column = 0;
 		for(String resualt: ans)
 		{
-			
+
 			for(int i=0;i<resualt.length();i++)
 			{
 				switch(resualt.charAt(i))
@@ -80,21 +80,21 @@ public class MyTextLevelLoader extends AbstractLevelLoader
 					}
 				}
 			}
-			
+
 			column++;
 		}
-		
-			
+
+
 		return level;
 	}
-	
+
 	//Save Level to file
 	public void SaveLevel(Level level,String LevelName)
 	{
 		String LevelString;
 		int i=0;
 		LevelString = new String();
-		LevelString=level.toString();		
+		LevelString=level.toString();
 		BufferedWriter writer= null;
 		try{
 			writer = new BufferedWriter(new FileWriter(LevelName.toString()));
@@ -118,10 +118,10 @@ public class MyTextLevelLoader extends AbstractLevelLoader
 	{
 		e.printStackTrace();
 	}
-		
+
 
 }
-	
-	
+
+
 }
 

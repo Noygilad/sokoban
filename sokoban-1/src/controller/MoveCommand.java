@@ -1,17 +1,19 @@
-package commands;
+package controller;
+
+import model.Model;
 
 //The class MoveCommand
 public class MoveCommand extends AbstractCommand {
 
 	//C'tor
-	public MoveCommand(RunCommand run) {
-		super(run);
+	public MoveCommand(Model model) {
+		super(model);
 	}
 
 	//Execute the move command
 	@Override
 	public void execute() {
-		Run.MoveCommand(CommandLine);
+		model.MoveCommand(CommandLine);
 
 	}
 

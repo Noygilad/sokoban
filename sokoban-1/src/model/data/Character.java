@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.Serializable;
 
@@ -13,10 +13,10 @@ public class Character extends AbstractItems implements Moveable,Serializable {
 	}
 	
 	//C'tor 
-	public Character(levels.Position position) {
+	public Character(model.data.Position position) {
 		super(position);
 	}
-	public Character(levels.Position position,char represtive) {
+	public Character(model.data.Position position,char represtive) {
 		super(position,represtive);
 	}
 

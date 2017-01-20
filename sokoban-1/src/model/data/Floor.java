@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.Serializable;
 
@@ -11,12 +11,12 @@ public class Floor extends AbstractItems implements Unmoveable,Serializable {
 	}
 	
 	//C'tor
-	public Floor(levels.Position position) {
+	public Floor(model.data.Position position) {
 		super(position);
 	}
 	
 	//C'tor
-	public Floor(levels.Position position,char represtive) {
+	public Floor(model.data.Position position,char represtive) {
 		super(position,represtive);
 	}
 

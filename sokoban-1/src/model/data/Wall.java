@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.Serializable;
 
@@ -11,12 +11,12 @@ public class Wall extends AbstractItems implements Unmoveable,Serializable {
 	}
 	
 	//C'tor
-	public Wall(levels.Position position) {
+	public Wall(model.data.Position position) {
 		super(position);
 	}
 	
 	//C'tor
-	public Wall(levels.Position position,char represtive) {
+	public Wall(model.data.Position position,char represtive) {
 		super(position,represtive);
 	}
 

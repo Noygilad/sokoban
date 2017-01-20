@@ -1,19 +1,22 @@
-package commands;
+package controller;
 
 import java.io.IOException;
+
+import model.Model;
+import view.View;
 
 //The class LoadCommand
 public class LoadCommand extends AbstractCommand {
 
 	//C'tor
-	public LoadCommand(RunCommand run) {
-		super(run);
+	public LoadCommand(Model model,View view) {
+		super(model,view);
 	}
 
 	//Execute the load command
 	@Override
 	public void execute() throws IOException {
-		Run.LoadCommand(CommandLine);
+		model.LoadCommand(CommandLine);
 	}
 
 

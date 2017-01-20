@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 //The interface Moveable
 public interface Moveable {

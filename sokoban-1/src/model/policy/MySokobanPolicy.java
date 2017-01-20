@@ -1,6 +1,9 @@
-package levels;
+package model.policy;
 
 import java.util.ArrayList;
+
+import model.data.Level;
+import model.data.Position;
 
 //The class MySokobanPolicy
 public class MySokobanPolicy {

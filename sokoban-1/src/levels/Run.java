@@ -2,9 +2,15 @@ package levels;
 
 import java.io.IOException;
 
-import commands.CLI;
-import commands.MyRunCommand;
-import commands.RunCommand;
+import controller.MyRunCommand;
+import controller.RunCommand;
+import model.Model;
+import model.MyModel;
+import view.CLI;
+import view.MyView;
+import view.View;
+
+
 
 //The class Run
 public class Run {
@@ -19,13 +25,13 @@ public class Run {
 	        Serialization.serialize(l1, out);
 	        ino = new FileInputStream("level1.obj");
 	        Level l2 = new MyObjectLevelLoader().LoadLevel(ino);
-	*/	
-/*		
+	*/
+/*
  **********************Tests***********************
 		LevelLoader load = new MyTextLevelLoader();
 		InputStream is = new FileInputStream(new File("level1.txt"));
 		Level level=load.LoadLevel(is);
-		System.out.println(level);		
+		System.out.println(level);
 		MySokobanPolicy policy=new MySokobanPolicy(level);
 		policy.MoveByPolicy(new Position2D(level.getCharacterList().get(0).getPosition().getRow(),level.getCharacterList().get(0).getPosition().getColumn()-1));
 		System.out.println(level);
@@ -37,20 +43,23 @@ public class Run {
 		System.out.println(level);
 		policy.MoveByPolicy(new Position2D(level.getCharacterList().get(0).getPosition().getRow()-1,level.getCharacterList().get(0).getPosition().getColumn()));
 		System.out.println(level);
-		
+
 		MyTextLevelLoader save = new MyTextLevelLoader();
 		save.SaveLevel(level);
 		*/
-		
+
 		//check CLI
-		RunCommand run=new MyRunCommand();
-		CLI cli=new CLI(run);
+
+		Model model=new MyModel();
+		View view=new MyView() {
+		};
+		CLI cli=new CLI(model,view);
 		cli.Run();
-		
-		
-		
+
+
+
 		//test my xml level loader
-	
+
 	/*	FileInputStream in1,ino1;
 		try{
 			in1=new FileInputStream("level1.txt");
@@ -63,16 +72,16 @@ public class Run {
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
 		}
-		
+
 /*Position2D p=new Position2D();
 	p.setColumn(5);
 	p.setRow(4);s
 	Box box=new Box('@');
 	box.setP(p);*/
-	
-	
+
+
 	//	temp[i][column] = line.charAt(i);
-	
-	
+
+
 	}
 }

@@ -1,4 +1,4 @@
-package controller;
+package model;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Observable;
 
 import model.data.Level;
 import model.data.LevelLoader;
@@ -18,8 +20,7 @@ import model.data.Position2D;
 import model.policy.MySokobanPolicy;
 import view.CLI;
 
-//The class MyRunCommand
-public class MyRunCommand implements RunCommand {
+public class MyModel extends Observable implements Model {
 
 	//Data members
 	CLI cli;
@@ -27,7 +28,7 @@ public class MyRunCommand implements RunCommand {
 	HashMap<String, LevelLoader> LoadMap;
 
 	//C'tor
-	public MyRunCommand() {
+	public MyModel() {
 		LoadMap=new HashMap<>();
 		LoadMap.put("txt", new MyTextLevelLoader());
 		LoadMap.put("obj", new MyObjectLevelLoader());
@@ -53,6 +54,10 @@ public class MyRunCommand implements RunCommand {
 				}
 			}
 		}
+		this.setChanged();
+		LinkedList<String> params = new LinkedList<String>();
+		params.add("Display");
+		this.notifyObservers(params);
 	}
 
 	//Display command
@@ -127,6 +132,11 @@ public class MyRunCommand implements RunCommand {
 			}
 		}
 		DisplayCommand();
+
+		this.setChanged();
+		LinkedList<String> params = new LinkedList<String>();
+		params.add("Display");
+		this.notifyObservers(params);
 	}
 
 	//Save command

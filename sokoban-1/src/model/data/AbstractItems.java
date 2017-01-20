@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 //check
 import java.io.Serializable;
 

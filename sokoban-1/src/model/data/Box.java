@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.Serializable;
 
@@ -16,7 +16,7 @@ public class Box extends AbstractItems implements Moveable,Serializable{
 		}
 	
 	//C'tor
-	public Box(levels.Position position,char represtive) {
+	public Box(model.data.Position position,char represtive) {
 		super(position,represtive);
 	}
 	

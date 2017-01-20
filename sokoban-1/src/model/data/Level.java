@@ -1,4 +1,4 @@
-package levels;
+package model.data;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -15,10 +15,10 @@ public class Level implements Serializable {
 	ArrayList<Character> CharacterList;
 	int Steps;
 //	private Position2D Start;
-	
+
 	public Level() {
 	}
-	
+
 	//C'tor
 	public Level(int row,int column) {
 		this.MoveableMap = new Moveable[row][column];
@@ -34,7 +34,7 @@ public class Level implements Serializable {
 			}
 		}
 	}
-	
+
 	//Getters and Setters
 	public Moveable[][] getMoveableMap() {
 		return MoveableMap;
@@ -112,7 +112,7 @@ public class Level implements Serializable {
 		return serialVersionUID;
 	}
 
-	//Add to the specific ArrayList the item  
+	//Add to the specific ArrayList the item
 	public void addToArray(int row,int column,Item item)
 	{
 		if (item.getReprestive()=='A') {
@@ -123,15 +123,15 @@ public class Level implements Serializable {
 			BoxList.add(new Box(new Position2D(row, column),item.getReprestive()));
 		}
 	}
-	
-	//Create ArrayList 
+
+	//Create ArrayList
 	public ArrayList<String> GetPossibleMove (Level level){
-		
+
 		ArrayList<String> PossibleDirection = null;
-		
+
 		return PossibleDirection;
 	}
-	
+
 	//Return the possible move
 	public ArrayList<Position> PossibleMoves(Position pos)
 	{
@@ -156,11 +156,11 @@ public class Level implements Serializable {
 		{
 			ArrayPos.add(new Position2D(pos.getRow()-1,pos.getColumn()));
 		}
-			
-			
+
+
 		return ArrayPos;
 	}
-	
+
 	//get type if target and box in same position-return box
 	public char getType(Position position)
 	{
@@ -183,21 +183,21 @@ public class Level implements Serializable {
 				return ' ';
 			}
 		}
-		
+
 	}
 	// get the position after the box
 	public Position getDirection(Position posCharacter , Position posBox)
 	{
-	
+
 		if(posCharacter.getRow()==posBox.getRow())
 		{
 			if(posCharacter.getColumn()>posBox.getColumn())
 			{
-				return new Position2D(posBox.getRow(),posBox.getColumn()-1); 
+				return new Position2D(posBox.getRow(),posBox.getColumn()-1);
 			}
 			else
 			{
-				return new Position2D(posBox.getRow(),posBox.getColumn()+1); 
+				return new Position2D(posBox.getRow(),posBox.getColumn()+1);
 			}
 		}
 		else
@@ -212,7 +212,7 @@ public class Level implements Serializable {
 			}
 		}
 	}
-	
+
 	//Move the item to the specific position
 	public void MoveItem(Item item,Position position)
 	{
@@ -232,17 +232,17 @@ public class Level implements Serializable {
 				}
 				else if(UnmoveableMap[position.getRow()][position.getColumn()]instanceof Floor||UnmoveableMap[position.getRow()][position.getColumn()]instanceof Target)
 				{
-					MoveableMap[CharacterList.get(i).getPosition().getRow()][CharacterList.get(i).getPosition().getColumn()] = null; 
+					MoveableMap[CharacterList.get(i).getPosition().getRow()][CharacterList.get(i).getPosition().getColumn()] = null;
 					MoveableMap[position.getRow()][position.getColumn()]=new Character(position);
-					CharacterList.get(i).setPosition(position); 
-					
+					CharacterList.get(i).setPosition(position);
+
 				}
 
 			}
 		}
-		
+
 	}
-	
+
 	//insert the array(moveable and unmoveable) to string
 	public String toString(){
 		String moveable = new String();
@@ -251,13 +251,13 @@ public class Level implements Serializable {
 				if(MoveableMap[i][j]== null)
 				{
 					moveable += UnmoveableMap[i][j].toString();
-					
+
 				}
 				else
 				{
 					moveable += MoveableMap[i][j].toString();
 				}
-				
+
 			}
 			moveable += '\n';
 		}
@@ -275,5 +275,5 @@ public class Level implements Serializable {
 	public void setSteps(int steps) {
 		Steps = steps;
 	}
-	
+
 }

@@ -1,20 +1,22 @@
-package commands;
+package controller;
 
 
 import java.io.IOException;
 
-//The class Save Command 
+import model.Model;
+
+//The class Save Command
 public class SaveCommand extends AbstractCommand {
 
 	//C'tor
-	public SaveCommand(RunCommand run) {
-		super(run);	
+	public SaveCommand(Model model) {
+		super(model);
 	}
 
 	//Execute save command
 	@Override
 	public void execute()throws IOException {
-		Run.SaveCommand(CommandLine);
+		model.SaveCommand(CommandLine);
 	}
 
 }
