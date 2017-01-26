@@ -4,30 +4,34 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.Observable;
 
+import common.Level;
 import controller.Command;
+import controller.Controller;
 import controller.DisplayCommand;
 import controller.ExitCommand;
 import controller.LoadCommand;
 import controller.MoveCommand;
-import controller.RunCommand;
 import controller.SaveCommand;
 import model.Model;
 //The class CLI
-public class CLI {
+public class CLI extends Observable {
 
 	//Data members
 	Model model;
 	View view;
+	Controller contoller;
 	PrintWriter out;
 	BufferedReader in;
 
 	//C'tor
-	public CLI(Model model,View view) {
+	public CLI(Model model) {
 		this.model=model;
-		this.view=view;
 		model.setCli(this);
 	}
+
+
 
 	//Start the command that activated
 	public void Run() throws IOException
@@ -57,7 +61,7 @@ public class CLI {
 					Line=in.readLine();
 						if(Line.equals("exit"))
 						{
-							new ExitCommand(model).execute();
+							new ExitCommand(model,view,contoller).execute();
 						}
 				}
 				} catch (IOException e) {

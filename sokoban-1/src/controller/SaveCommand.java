@@ -16,7 +16,8 @@ public class SaveCommand extends AbstractCommand {
 	//Execute save command
 	@Override
 	public void execute()throws IOException {
-		model.SaveCommand(CommandLine);
+		System.out.println("save command");
+		model.SaveCommand(params.get(0));
 	}
 
 }

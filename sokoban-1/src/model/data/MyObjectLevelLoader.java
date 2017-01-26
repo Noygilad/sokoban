@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
+import common.Level;
+
 //The class MyObjectLevelLoader
 @SuppressWarnings("serial")
 public class MyObjectLevelLoader extends AbstractLevelLoader implements Serializable {

@@ -2,7 +2,7 @@ package model.policy;
 
 import java.util.ArrayList;
 
-import model.data.Level;
+import common.Level;
 import model.data.Position;
 
 //The class MySokobanPolicy
@@ -10,12 +10,12 @@ public class MySokobanPolicy {
 
 	//Data members
 	Level Level;
-	
+
 	//C'tor
 	public MySokobanPolicy(Level Level2) {
 		Level=Level2;
 	}
-	
+
 	//The policy of the game-return ArrayList with the possible moves
 	public ArrayList<Position> Policy()
 	{
@@ -34,11 +34,11 @@ public class MySokobanPolicy {
 					temp.remove(position);
 				}
 			}
-			
+
 		}
 		return temp;
 	}
-	
+
 	//Move the item by the policy
 	public void MoveByPolicy (Position direction)
 	{
@@ -46,8 +46,8 @@ public class MySokobanPolicy {
 		PossibleMove=Policy();
 		if(PossibleMove.contains(direction))
 		{
-		Level.MoveItem(Level.getCharacterList().get(0),direction);
+			Level.MoveItem(Level.getCharacterList().get(0),direction);
 		}
 	}
-	
+
 }

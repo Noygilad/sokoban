@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import common.Level;
+
 //The class MyTextLevelLoader
 public class MyTextLevelLoader extends AbstractLevelLoader
 {
@@ -17,6 +19,7 @@ public class MyTextLevelLoader extends AbstractLevelLoader
 	@Override
 	public Level LoadLevel(InputStream LevelLoad)throws IOException
 	{
+
 		BufferedReader read = new BufferedReader(new InputStreamReader(LevelLoad));
 		String line;
 		int column=0;

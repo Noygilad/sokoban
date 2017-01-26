@@ -1,7 +1,18 @@
-package model.data;
+package common;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import model.data.Box;
+import model.data.Character;
+import model.data.Floor;
+import model.data.Item;
+import model.data.Moveable;
+import model.data.Position;
+import model.data.Position2D;
+import model.data.Target;
+import model.data.Unmoveable;
+import model.data.Wall;
 
 //The class Level
 public class Level implements Serializable {
@@ -14,6 +25,7 @@ public class Level implements Serializable {
 	ArrayList<Target> TargetList;
 	ArrayList<Character> CharacterList;
 	int Steps;
+	long Time;
 //	private Position2D Start;
 
 	public Level() {
@@ -27,6 +39,7 @@ public class Level implements Serializable {
 		this.TargetList = new ArrayList<Target>();
 		this.CharacterList = new ArrayList<Character>();
 		this.Steps = 0;
+		this.Time=System.currentTimeMillis();
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 				UnmoveableMap[i][j] = new Floor(new Position2D(i, j),' ');
@@ -100,6 +113,29 @@ public class Level implements Serializable {
 		return Steps;
 	}
 
+	public void setSteps(int steps) {
+		Steps = steps;
+	}
+
+	public long getTime() {
+		return Time;
+	}
+
+	public void setTime(long time) {
+		Time = time;
+	}
+
+	public void setMoveableMap(Moveable[][] moveableMap) {
+		MoveableMap = moveableMap;
+	}
+
+	public void setUnmoveableMap(Unmoveable[][] unmoveableMap) {
+		UnmoveableMap = unmoveableMap;
+	}
+
+
+
+
 	/*public Position2D getStart() {
 		return Start;
 	}
@@ -142,17 +178,17 @@ public class Level implements Serializable {
 			ArrayPos.add(new Position2D(pos.getRow(),pos.getColumn()+1));
 		}
 		//Left
-		if((UnmoveableMap[pos.getRow()][pos.getColumn()-1].toString()==" ")||(UnmoveableMap[pos.getRow()][pos.getColumn()+1].toString()=="o"))
+		if((UnmoveableMap[pos.getRow()][pos.getColumn()-1].toString()==" ")||(UnmoveableMap[pos.getRow()][pos.getColumn()-1].toString()=="o"))
 		{
 			ArrayPos.add(new Position2D(pos.getRow(),pos.getColumn()-1));
 		}
 		//Up
-		if((UnmoveableMap[pos.getRow()+1][pos.getColumn()].toString()==" ")||(UnmoveableMap[pos.getRow()][pos.getColumn()+1].toString()=="o"))
+		if((UnmoveableMap[pos.getRow()+1][pos.getColumn()].toString()==" ")||(UnmoveableMap[pos.getRow()+1][pos.getColumn()].toString()=="o"))
 		{
 			ArrayPos.add(new Position2D(pos.getRow()+1,pos.getColumn()));
 		}
 		//Down
-		if((UnmoveableMap[pos.getRow()-1][pos.getColumn()].toString()==" ")||(UnmoveableMap[pos.getRow()][pos.getColumn()+1].toString()=="o"))
+		if((UnmoveableMap[pos.getRow()-1][pos.getColumn()].toString()==" ")||(UnmoveableMap[pos.getRow()-1][pos.getColumn()].toString()=="o"))
 		{
 			ArrayPos.add(new Position2D(pos.getRow()-1,pos.getColumn()));
 		}
@@ -229,8 +265,13 @@ public class Level implements Serializable {
 					MoveableMap[CharacterList.get(i).getPosition().getRow()][CharacterList.get(i).getPosition().getColumn()] = null;
 					MoveableMap[position.getRow()][position.getColumn()]=new Character(position);
 					CharacterList.get(i).setPosition(position);
+
+					if(this.UnmoveableMap[pos.getRow()][pos.getColumn()]instanceof Target)
+						BoxList.get(x).setOnDest(true);
+					else
+						BoxList.get(x).setOnDest(false);
 				}
-				else if(UnmoveableMap[position.getRow()][position.getColumn()]instanceof Floor||UnmoveableMap[position.getRow()][position.getColumn()]instanceof Target)
+				else if((UnmoveableMap[position.getRow()][position.getColumn()]instanceof Floor)||(UnmoveableMap[position.getRow()][position.getColumn()]instanceof Target))
 				{
 					MoveableMap[CharacterList.get(i).getPosition().getRow()][CharacterList.get(i).getPosition().getColumn()] = null;
 					MoveableMap[position.getRow()][position.getColumn()]=new Character(position);
@@ -239,6 +280,8 @@ public class Level implements Serializable {
 				}
 
 			}
+			setSteps(Steps+1);
+
 		}
 
 	}
@@ -264,16 +307,48 @@ public class Level implements Serializable {
 		return moveable;
 	}
 
-	public void setMoveableMap(Moveable[][] moveableMap) {
-		MoveableMap = moveableMap;
+	public char[][] getBoard()
+	{
+		char[][] board = new char [UnmoveableMap.length][UnmoveableMap[0].length];
+		for(int i=0; i<UnmoveableMap.length ;i++)
+		{
+			for(int j=0; j< UnmoveableMap[0].length; j++)
+			{
+				if(MoveableMap[i][j]==null)
+				{
+					if(UnmoveableMap[i][j].toString()=="#")
+						board[i][j]='#';
+					else
+						if(UnmoveableMap[i][j].toString()==" ")
+							board[i][j]=' ';
+						else
+								board[i][j]='o';
+				}
+				else
+				{
+					if(MoveableMap[i][j].toString()=="A")
+						board[i][j]='A';
+					else
+						board[i][j]='@';
+				}
+			}
+		}
+		return board;
 	}
 
-	public void setUnmoveableMap(Unmoveable[][] unmoveableMap) {
-		UnmoveableMap = unmoveableMap;
+	public int numOfBoxesOnTargets() {
+		int count=0;
+ 		for (int i = 0 ; i<BoxList.size(); i++)
+ 			if (getBoxList().get(i).isOnDest())
+ 				count++;
+ 		return count;
+ 	}
+
+	public Boolean isEndOfLevel() {
+ 		return numOfBoxesOnTargets()==TargetList.size();
+
 	}
 
-	public void setSteps(int steps) {
-		Steps = steps;
-	}
+
 
 }

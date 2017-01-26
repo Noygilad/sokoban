@@ -2,6 +2,7 @@ package model;
 
 import java.io.IOException;
 
+import common.Level;
 import view.CLI;
 
 public interface Model {
@@ -9,17 +10,20 @@ public interface Model {
 	public void setCli(CLI cli);
 
 	//Load command
-	public void LoadCommand(String[] CommandLine)throws IOException;
+	public void LoadCommand(String CommandLine)throws IOException;
 
 	//Display command
-	public void DisplayCommand();
+	public String DisplayCommand();
 
 	//Move command
-	public void MoveCommand(String[] CommandLine);
+	public void MoveCommand(String CommandLine);
 
 	//Save command
-	public void SaveCommand(String[] CommandLine) throws IOException;
+	public void SaveCommand(String CommandLine) throws IOException;
 
 	//Exit command
 	public void ExitCommand();
+
+	//getcurrentLevel
+	public Level getCurrentLevel();
 }

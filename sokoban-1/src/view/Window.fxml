@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import view.SokobanDisplayer?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MyView">
+	<top>
+		<VBox prefHeight="100" prefWidth="67.0" BorderPane.alignment="CENTER_RIGHT">
+			<MenuBar BorderPane.alignment="CENTER">
+				<menus>
+					<Menu mnemonicParsing="false" text="File">
+						<items>
+							<MenuItem mnemonicParsing="false" onAction="#LoadLevel"
+								text="load level" />
+							<MenuItem mnemonicParsing="false" onAction="#SaveLevel"
+								text="save level" />
+							<MenuItem mnemonicParsing="false" onAction="#CloseWindow"
+								text="Close" />
+						</items>
+					</Menu>
+				</menus>
+			</MenuBar>
+			<HBox prefHeight="60">
+				<children>
+					<Label prefHeight="17.0" text="Steps: " />
+					<Label fx:id="stepCounter" prefWidth="100" />
+					<Label prefHeight="17.0" text="Time: " />
+					<Label fx:id="timer" />
+				</children>
+			</HBox>
+		</VBox>
+	</top>
+	<left>
+	</left>
+	<center>
+		<SokobanDisplayer fx:id="sokobanDisplayer" height="500"
+			width="500" BorderPane.alignment="CENTER" wallFileName="./resources/wall.jpg"
+			boxFileName="./resources/box.png" characterFileName="./resources/character.png"
+			targetFileName="./resources/target.png" startFileName="./resources/Start.JPG" />
+	</center>
+</BorderPane>

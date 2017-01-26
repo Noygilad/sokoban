@@ -13,7 +13,7 @@ public class MoveCommand extends AbstractCommand {
 	//Execute the move command
 	@Override
 	public void execute() {
-		model.MoveCommand(CommandLine);
+		model.MoveCommand(params.get(0));
 
 	}
 

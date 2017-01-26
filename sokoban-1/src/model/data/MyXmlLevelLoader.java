@@ -9,6 +9,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import common.Level;
+
 //The class MyXmlLevelLoader
 
 public class MyXmlLevelLoader extends AbstractLevelLoader{
@@ -27,13 +29,13 @@ public class MyXmlLevelLoader extends AbstractLevelLoader{
 	//Save level to file
 	@Override
 	public void SaveLevel(Level level, String LevelName) {
-		
+
 		XMLEncoder e;
 		try {
 			e = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(LevelName)));
 			e.writeObject(level);
 			e.close();
-			
+
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}

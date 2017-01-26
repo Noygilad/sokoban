@@ -16,7 +16,7 @@ public class LoadCommand extends AbstractCommand {
 	//Execute the load command
 	@Override
 	public void execute() throws IOException {
-		model.LoadCommand(CommandLine);
+		model.LoadCommand(params.get(0));
 	}
 
 

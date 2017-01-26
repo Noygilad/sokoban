@@ -1,5 +1,6 @@
+/view/
+/boot/
 /controller/
-/commands/
 /model/
 /levels/
-/view/
+/common/
