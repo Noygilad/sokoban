@@ -2,13 +2,10 @@ package view;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 
@@ -89,14 +86,12 @@ public class SokobanDisplayer extends Canvas {
 
 			GraphicsContext gc = getGraphicsContext2D();
 
-			Image wall=null,box=null,character=null,/*floor=null*/target=null,start=null;
+			Image wall=null,box=null,character=null,target=null;
 			try {
 				wall = new Image(new FileInputStream(wallFileName.get()));
 				box = new Image(new FileInputStream(boxFileName.get()));
 				character = new Image(new FileInputStream(characterFileName.get()));
-				//floor = new Image(new FileInputStream("./resources/floor.jpg"));
 				target = new Image(new FileInputStream(targetFileName.get()));
-				start = new Image(new FileInputStream(startFileName.get()));
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -109,7 +104,6 @@ public class SokobanDisplayer extends Canvas {
 					{
 						gc.setFill(Color.WHITE);
 					gc.fillRect(j*w, i*h, w, h);
-						//gc.fillRect(j*w, i*h, w, h);
 						gc.drawImage(wall, j*w, i*h, w, h);
 					}
 
@@ -119,21 +113,18 @@ public class SokobanDisplayer extends Canvas {
 						{
 							gc.setFill(Color.WHITE);
 							gc.fillRect(j*w, i*h, w, h);
-						//gc.fillRect(j*w, i*h, w, h);
 							gc.drawImage(box, j*w, i*h, w, h);
 						}
 						else
 							if(sokobanData[i][j]=='A')
 							{gc.setFill(Color.WHITE);
 							gc.fillRect(j*w, i*h, w, h);
-							//gc.fillRect(j*w, i*h, w, h);
 								gc.drawImage(character, j*w, i*h, w, h);
 							}
 							else
 								if(sokobanData[i][j]=='o')
 								{gc.setFill(Color.WHITE);
 								gc.fillRect(j*w, i*h, w, h);
-									//gc.fillRect(j*w, i*h, w, h);
 									gc.drawImage(target, j*w, i*h, w, h);
 								}
 								else

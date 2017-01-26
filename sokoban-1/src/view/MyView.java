@@ -1,23 +1,17 @@
 package view;
 
-import java.beans.XMLDecoder;
-import java.io.BufferedInputStream;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.Observable;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
 import common.Level;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.event.EventHandler;
@@ -26,7 +20,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
@@ -178,7 +171,6 @@ public class MyView extends Observable implements Initializable, View {
 	}
 
 	public void exit() {
-		System.out.println("Closed");
 		stage.close();
 	}
 

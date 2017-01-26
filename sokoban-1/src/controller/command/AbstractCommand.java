@@ -13,6 +13,8 @@ public abstract class AbstractCommand implements Command {
 	Model model;
 	View view;
 	MyServer myServer;
+	String[] CommandLine;
+	protected List<String> params;
 
 	// C'tor
 	public AbstractCommand(Model model, MyServer myServer) {
@@ -61,9 +63,6 @@ public abstract class AbstractCommand implements Command {
 	public void setView(View view) {
 		this.view = view;
 	}
-
-	String[] CommandLine;
-	protected List<String> params;
 
 	public void setParams(List<String> params) {
 		this.params = params;
