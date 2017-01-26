@@ -35,6 +35,33 @@ public class MyModel extends Observable implements Model {
 		LoadMap.put("xml", new MyXmlLevelLoader());
 	}
 
+	//Getters and setters
+	public Level getLevel() {
+		return level;
+	}
+
+	public void setLevel(Level level) {
+		this.level = level;
+	}
+
+	public HashMap<String, LevelLoader> getLoadMap() {
+		return LoadMap;
+	}
+
+	public void setLoadMap(HashMap<String, LevelLoader> loadMap) {
+		LoadMap = loadMap;
+	}
+
+	public CLI getCli() {
+		return cli;
+	}
+
+	@Override
+	public Level getCurrentLevel() {
+		return this.level;
+	}
+
+
 	// Load command
 	public void LoadCommand(String CommandLine) throws IOException {
 		String fin;
@@ -70,26 +97,6 @@ public class MyModel extends Observable implements Model {
 		}
 		return moveable;
 
-	}
-
-	public Level getLevel() {
-		return level;
-	}
-
-	public void setLevel(Level level) {
-		this.level = level;
-	}
-
-	public HashMap<String, LevelLoader> getLoadMap() {
-		return LoadMap;
-	}
-
-	public void setLoadMap(HashMap<String, LevelLoader> loadMap) {
-		LoadMap = loadMap;
-	}
-
-	public CLI getCli() {
-		return cli;
 	}
 
 	// Move command
@@ -154,10 +161,4 @@ public class MyModel extends Observable implements Model {
 	@Override
 	public void ExitCommand() {
 	}
-
-	@Override
-	public Level getCurrentLevel() {
-		return this.level;
-	}
-
 }

@@ -26,7 +26,7 @@ public class Level implements Serializable {
 	ArrayList<Character> CharacterList;
 	int Steps;
 	long Time;
-//	private Position2D Start;
+
 
 	public Level() {
 	}
@@ -133,17 +133,6 @@ public class Level implements Serializable {
 		UnmoveableMap = unmoveableMap;
 	}
 
-
-
-
-	/*public Position2D getStart() {
-		return Start;
-	}
-
-	public void setStart(Position2D start) {
-		Start = start;
-	}
-*/
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
@@ -221,6 +210,7 @@ public class Level implements Serializable {
 		}
 
 	}
+
 	// get the position after the box
 	public Position getDirection(Position posCharacter , Position posBox)
 	{
@@ -307,6 +297,7 @@ public class Level implements Serializable {
 		return moveable;
 	}
 
+	//return the board of the game
 	public char[][] getBoard()
 	{
 		char[][] board = new char [UnmoveableMap.length][UnmoveableMap[0].length];
@@ -336,6 +327,7 @@ public class Level implements Serializable {
 		return board;
 	}
 
+	//return the numbers of the boxes that are on targets
 	public int numOfBoxesOnTargets() {
 		int count=0;
  		for (int i = 0 ; i<BoxList.size(); i++)
@@ -344,6 +336,7 @@ public class Level implements Serializable {
  		return count;
  	}
 
+	//check if level complete
 	public Boolean isEndOfLevel() {
  		return numOfBoxesOnTargets()==TargetList.size();
 

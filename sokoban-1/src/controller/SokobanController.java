@@ -9,6 +9,12 @@ import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
 
+import controller.command.Command;
+import controller.command.DisplayCommand;
+import controller.command.ExitCommand;
+import controller.command.LoadCommand;
+import controller.command.MoveCommand;
+import controller.command.SaveCommand;
 import controller.server.MyServer;
 import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;
@@ -19,14 +25,15 @@ import view.View;
 
 public class SokobanController implements Observer {
 
+	//Data members
 	private Model model;
 	private View view;
 	private Controller controller;
 	private HashMap<String, Command> command;
 	private MyServer myServer;
-
 	IntegerProperty counter;
 
+	//Getters and setters
 	public void setModel(Model model) {
 		this.model = model;
 	}
@@ -39,6 +46,7 @@ public class SokobanController implements Observer {
 		this.controller = controller;
 	}
 
+	//C'tor
 	public SokobanController(Model model, View view) {
 		this.model = model;
 		this.view = view;
@@ -78,6 +86,7 @@ public class SokobanController implements Observer {
 		controller.Start();
 	}
 
+	//Create new commands
 	private void InitCommands() {
 		command = new HashMap<String, Command>();
 		command.put("move", new MoveCommand(model));
@@ -87,6 +96,7 @@ public class SokobanController implements Observer {
 
 	}
 
+	//notify to observers that change happened
 	@Override
 	public void update(Observable o, Object arg) {
 		LinkedList<String> params = (LinkedList<String>) arg;
@@ -94,7 +104,6 @@ public class SokobanController implements Observer {
 
 		Command c = command.get(commandKey);
 		if (c == null) {
-			// fix!!!!!!!!111
 			System.out.println("Error");
 			return;
 		}

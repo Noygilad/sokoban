@@ -31,7 +31,6 @@ public class Main extends Application {
 			model.addObserver(controller);
 			mv.addObserver(controller);
 
-			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
@@ -39,10 +38,8 @@ public class Main extends Application {
 				@Override
 				public void handle(WindowEvent event) {
 					mv.CloseWindow();
-
 				}
 			});
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -65,15 +62,5 @@ public class Main extends Application {
 			}
 		} else
 			launch(args);
-
-		/*
-		 * SokobanControls sokobanControls = new SokobanControls(KeyCode.UP,
-		 * KeyCode.DOWN, KeyCode.LEFT, KeyCode.RIGHT);
-		 *
-		 * XMLEncoder e; try { e = new XMLEncoder(new BufferedOutputStream(new
-		 * FileOutputStream("SokobanControls.xml")));
-		 * e.writeObject(sokobanControls); e.close(); } catch
-		 * (FileNotFoundException e1) { e1.printStackTrace(); }
-		 */
-	}
+		}
 }

@@ -6,6 +6,7 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class Box extends AbstractItems implements Moveable,Serializable{
 
+	//Data members
 	private Position2D PosBox;
 	private boolean OnDest;
 
@@ -45,8 +46,6 @@ public class Box extends AbstractItems implements Moveable,Serializable{
 	public String toString(){
 		return "@";
 	}
-
-
 
 	//Move
 	@Override

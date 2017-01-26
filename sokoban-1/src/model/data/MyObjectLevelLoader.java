@@ -20,7 +20,6 @@ public class MyObjectLevelLoader extends AbstractLevelLoader implements Serializ
 		try {
 			level=(Level) Serialization.deserialize(LevelLoad);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return level;
@@ -36,6 +35,6 @@ public class MyObjectLevelLoader extends AbstractLevelLoader implements Serializ
 		oos.writeObject(level);
 		fout.close();
 		oos.close();
-		
+
 	}
 }

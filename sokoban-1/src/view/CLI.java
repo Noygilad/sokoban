@@ -7,13 +7,13 @@ import java.io.PrintWriter;
 import java.util.Observable;
 
 import common.Level;
-import controller.Command;
 import controller.Controller;
-import controller.DisplayCommand;
-import controller.ExitCommand;
-import controller.LoadCommand;
-import controller.MoveCommand;
-import controller.SaveCommand;
+import controller.command.Command;
+import controller.command.DisplayCommand;
+import controller.command.ExitCommand;
+import controller.command.LoadCommand;
+import controller.command.MoveCommand;
+import controller.command.SaveCommand;
 import model.Model;
 //The class CLI
 public class CLI extends Observable {

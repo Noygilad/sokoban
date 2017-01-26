@@ -1,4 +1,4 @@
-package controller;
+package controller.command;
 
 import java.util.List;
 
@@ -13,29 +13,6 @@ public abstract class AbstractCommand implements Command {
 	Model model;
 	View view;
 	MyServer myServer;
-
-	public MyServer getMyServer() {
-		return myServer;
-	}
-
-	public void setMyServer(MyServer myServer) {
-		this.myServer = myServer;
-	}
-
-	public View getView() {
-		return view;
-	}
-
-	public void setView(View view) {
-		this.view = view;
-	}
-
-	String[] CommandLine;
-	protected List<String> params;
-
-	public void setParams(List<String> params) {
-		this.params = params;
-	}
 
 	// C'tor
 	public AbstractCommand(Model model, MyServer myServer) {
@@ -67,6 +44,29 @@ public abstract class AbstractCommand implements Command {
 
 	public void setCommandLine(String[] commandLine) {
 		CommandLine = commandLine;
+	}
+
+	public MyServer getMyServer() {
+		return myServer;
+	}
+
+	public void setMyServer(MyServer myServer) {
+		this.myServer = myServer;
+	}
+
+	public View getView() {
+		return view;
+	}
+
+	public void setView(View view) {
+		this.view = view;
+	}
+
+	String[] CommandLine;
+	protected List<String> params;
+
+	public void setParams(List<String> params) {
+		this.params = params;
 	}
 
 }

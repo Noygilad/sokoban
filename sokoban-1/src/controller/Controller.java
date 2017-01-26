@@ -5,18 +5,30 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+import controller.command.Command;
 import controller.server.MyServer;
 
 public class Controller {
+	//Date members
 	private BlockingQueue<Command> queue;
 	private boolean isStopped = false;
 	private MyServer myServer;
 
-
+	//Default C'tor
 	public Controller() {
 		queue = new ArrayBlockingQueue<Command>(10);
 	}
 
+	//Getters and setters
+	public MyServer getMyServer() {
+		return myServer;
+	}
+
+	public void setMyServer(MyServer myServer) {
+		this.myServer = myServer;
+	}
+
+	//insert the command to blocking queue
 	public void InsertCommand(Command command)
 	{
 		try {
@@ -27,6 +39,7 @@ public class Controller {
 
 	}
 
+	//Start my server thread
 	public void Start()
 	{
 		if(myServer != null)
@@ -51,6 +64,8 @@ public class Controller {
 		thread.start();
 	}
 
+	//Stop my server thread
+	@SuppressWarnings("deprecation")
 	public void Stop()
 	{
 		if(myServer != null)
@@ -59,11 +74,4 @@ public class Controller {
 		Thread.currentThread().stop();
 	}
 
-	public MyServer getMyServer() {
-		return myServer;
-	}
-
-	public void setMyServer(MyServer myServer) {
-		this.myServer = myServer;
-	}
 }

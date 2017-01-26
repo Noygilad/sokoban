@@ -1,7 +1,8 @@
-package controller;
+package controller.command;
 
 import java.io.IOException;
 
+import controller.Controller;
 import javafx.application.Platform;
 import model.Model;
 import view.View;

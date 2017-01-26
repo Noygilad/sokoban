@@ -7,7 +7,6 @@ import common.Level;
 import javafx.beans.property.IntegerProperty;
 
 public interface View {
-
 	public void displayGui(Level level);
 	public void CloseWindow();
 	public void exit();

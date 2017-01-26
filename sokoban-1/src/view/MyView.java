@@ -35,6 +35,7 @@ import javafx.util.Duration;
 
 public class MyView extends Observable implements Initializable, View {
 
+	//Data members
 	CLI cli;
 	LinkedList<String> params;
 	Level level;
@@ -45,7 +46,6 @@ public class MyView extends Observable implements Initializable, View {
 	private StringProperty myTimerCounter;
 	private Timeline timeLine;
 	private SokobanControls sokobanControls;
-
 	@FXML
 	Label stepCounter;
 	@FXML
@@ -53,11 +53,7 @@ public class MyView extends Observable implements Initializable, View {
 	@FXML
 	Label timer;
 
-	public void startCount() {
-		timeLine.setCycleCount(Animation.INDEFINITE);
-		timeLine.play();
-	}
-
+	//Getters and setters
 	public Boolean getLevelFinished() {
 		return levelFinished;
 	}
@@ -73,7 +69,12 @@ public class MyView extends Observable implements Initializable, View {
 	public void setStage(Stage stage) {
 		this.stage = stage;
 	}
+	@Override
+	public void setControls(SokobanControls sokobanControls) {
+		this.sokobanControls = sokobanControls;
+	}
 
+	//Initialize all variables
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		sokobanDisplayer.setSokobanData(sokobanData);
@@ -124,6 +125,7 @@ public class MyView extends Observable implements Initializable, View {
 		});
 	}
 
+	//Load level
 	public void LoadLevel() {
 		FileChooser fc = new FileChooser();
 		fc.setTitle("Load level");
@@ -144,8 +146,8 @@ public class MyView extends Observable implements Initializable, View {
 		}
 	}
 
+	//Save level
 	public void SaveLevel() {
-
 		System.out.println("saveLevel-in my view");
 		FileChooser fc = new FileChooser();
 		fc.setTitle("Save Level");
@@ -166,6 +168,7 @@ public class MyView extends Observable implements Initializable, View {
 
 	}
 
+	//close the window of the game neatly
 	public void CloseWindow() {
 		params = new LinkedList<>();
 		params.add("exit");
@@ -179,6 +182,7 @@ public class MyView extends Observable implements Initializable, View {
 		stage.close();
 	}
 
+	//Display GUI
 	@Override
 	public void displayGui(Level level) {
 		char[][] mat = level.getBoard();
@@ -186,11 +190,10 @@ public class MyView extends Observable implements Initializable, View {
 		if (level.isEndOfLevel() == true) {
 			setLevelFinished(true);
 		}
-
-		// Steps=level.getSteps();
 		LevelFinished();
 	}
 
+	//Check if level finished
 	public void LevelFinished() {
 		if (levelFinished == true) {
 
@@ -210,13 +213,16 @@ public class MyView extends Observable implements Initializable, View {
 
 	}
 
+
 	public void Bind(IntegerProperty stepcounter) {
 		this.stepCounter.textProperty().bind(stepcounter.asString());
 	}
 
-	@Override
-	public void setControls(SokobanControls sokobanControls) {
-		this.sokobanControls = sokobanControls;
+	//Start the count
+	public void startCount() {
+		timeLine.setCycleCount(Animation.INDEFINITE);
+		timeLine.play();
 	}
+
 
 }

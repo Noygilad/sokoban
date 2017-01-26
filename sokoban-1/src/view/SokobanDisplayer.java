@@ -14,30 +14,25 @@ import javafx.scene.paint.Color;
 
 public class SokobanDisplayer extends Canvas {
 
+	//Data members
 	char[][] sokobanData;
 	private StringProperty wallFileName;
 	private StringProperty boxFileName;
 	private StringProperty characterFileName;
-	//private StringProperty floorFileName;
 	private StringProperty targetFileName;
 	private StringProperty startFileName;
-
-
-
 	int row,col;
 
-
+	//C'tor
 	public SokobanDisplayer() {
 		wallFileName = new SimpleStringProperty();
 		boxFileName = new SimpleStringProperty();
 		characterFileName = new SimpleStringProperty();
 		targetFileName = new SimpleStringProperty();
 		startFileName=new SimpleStringProperty();
-
-
 	}
 
-
+	//Getters and setters
 	public String getStartFileName() {
 		return startFileName.get();
 	}
@@ -84,6 +79,7 @@ public class SokobanDisplayer extends Canvas {
 		redraw();
 	}
 
+	//Draw the board of the level
 	public void redraw(){
 		if(sokobanData!=null){
 			double H = getHeight();
@@ -145,10 +141,8 @@ public class SokobanDisplayer extends Canvas {
 									gc.setFill(Color.WHITE);
 									gc.fillRect(j*w, i*h, w, h);
 								}
-					//gc.drawImage(character, cCol*w, cRow*h, w, h);
-
 				}
-		}
+			}
 
 	}
 

@@ -4,13 +4,16 @@ import javafx.scene.control.Label;
 
 public class MyTimerThread extends Thread {
 
+	//Data members
 	private Label label;
 	private boolean go = true;
 
+	//C'tor
 	public MyTimerThread(Label label) {
 		this.label = label;
 	}
 
+	//Start the thread of timer
 	@Override
 	public void run() {
 		int count = 0;
@@ -18,7 +21,6 @@ public class MyTimerThread extends Thread {
 			try {
 				sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			label.setText("" + count++);
@@ -26,6 +28,7 @@ public class MyTimerThread extends Thread {
 		super.run();
 	}
 
+	//Set the flag=false and stop the thread of timer
 	public void stopTimer(){
 		go = false;
 	}
