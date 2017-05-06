@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 Level 2
 ######  ###
+=======
+######  ### 
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 #oo  # ##A##
 #oo  ###   #
 #oo     @@ #

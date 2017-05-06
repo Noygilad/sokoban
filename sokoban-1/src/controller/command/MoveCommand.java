@@ -13,7 +13,11 @@ public class MoveCommand extends AbstractCommand {
 	//Execute the move command
 	@Override
 	public void execute() {
+<<<<<<< HEAD
 		model.MoveCommand((String)params.get(0));
+=======
+		model.MoveCommand(params.get(0));
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 
 	}
 

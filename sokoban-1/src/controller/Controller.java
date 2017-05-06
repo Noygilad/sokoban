@@ -16,7 +16,11 @@ public class Controller {
 
 	//Default C'tor
 	public Controller() {
+<<<<<<< HEAD
 		queue = new ArrayBlockingQueue<Command>(30);
+=======
+		queue = new ArrayBlockingQueue<Command>(10);
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 	}
 
 	//Getters and setters

@@ -17,5 +17,10 @@ public interface Command {
 	public void setView(View view);
 	public String[] getCommandLine();
 	public void setCommandLine(String[] commandLine);
+<<<<<<< HEAD
 	public void setParams(List<Object> params);
+=======
+	public void setParams(List<String> params);
+
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 }

@@ -16,7 +16,11 @@ public class LoadCommand extends AbstractCommand {
 	//Execute the load command
 	@Override
 	public void execute() throws IOException {
+<<<<<<< HEAD
 		model.LoadCommand((String)params.get(0));
+=======
+		model.LoadCommand(params.get(0));
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 	}
 
 

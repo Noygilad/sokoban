@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 /boot/
+=======
+/view/
+/boot/
+/controller/
+/model/
+/levels/
+/common/
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git

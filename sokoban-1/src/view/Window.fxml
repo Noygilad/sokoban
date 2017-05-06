@@ -44,7 +44,11 @@
 		<SokobanDisplayer fx:id="sokobanDisplayer" height="500"
 			width="500" BorderPane.alignment="CENTER" wallFileName="./resources/wall.jpg"
 			boxFileName="./resources/box.png" characterFileName="./resources/character.png"
+<<<<<<< HEAD
 			targetFileName="./resources/target.png" startFileName="./resources/start.PNG"
 			finishFileName="./resources/end.PNG" floorFileName="./resources/floor.png"/>
+=======
+			targetFileName="./resources/target.png" startFileName="./resources/Start.JPG" />
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 	</center>
 </BorderPane>

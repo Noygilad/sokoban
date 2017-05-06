@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 Level 1
+=======
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
         ########
         #     A#
         #     ##

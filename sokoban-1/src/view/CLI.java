@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Observable;
 
+<<<<<<< HEAD
+=======
+import common.Level;
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 import controller.Controller;
 import controller.command.Command;
 import controller.command.DisplayCommand;

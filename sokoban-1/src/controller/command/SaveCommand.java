@@ -17,7 +17,11 @@ public class SaveCommand extends AbstractCommand {
 	@Override
 	public void execute()throws IOException {
 		System.out.println("save command");
+<<<<<<< HEAD
 		model.SaveCommand((String)params.get(0));
+=======
+		model.SaveCommand(params.get(0));
+>>>>>>> branch 'master' of https://github.com/Noygilad/sokoban.git
 	}
 
 }
