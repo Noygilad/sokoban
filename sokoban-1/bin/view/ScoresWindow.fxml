@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="582.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ScoreView">
+	<children>
+		<ChoiceBox fx:id="orderByChoiceBox" layoutX="266.0" layoutY="31.0" prefHeight="25.0" prefWidth="97.0" />
+		<TextField fx:id="userNameField" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="109.0" />
+		<TextField fx:id="levelNameField" layoutX="135.0" layoutY="31.0" prefHeight="25.0" prefWidth="120.0" />
+		<Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name:" />
+		<Text layoutX="135.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level name:" />
+		<Text layoutX="277.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="order by:" />
+		<TableView fx:id="scoresTable" layoutX="14.0" layoutY="75.0" prefHeight="417.0" prefWidth="415.0">
+			<columns>
+				<TableColumn prefWidth="75.0" text="ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="75.0" text="User Name">
+				<cellValueFactory>
+						<PropertyValueFactory property="userName" />
+					</cellValueFactory>
+					</TableColumn>
+				<TableColumn prefWidth="75.0" text="Level Name">
+				<cellValueFactory>
+						<PropertyValueFactory property="levelName" />
+					</cellValueFactory>
+					</TableColumn>
+				<TableColumn prefWidth="75.0" text="Steps">
+				<cellValueFactory>
+						<PropertyValueFactory property="steps" />
+					</cellValueFactory>
+					</TableColumn>
+				<TableColumn fx:id="timer" prefWidth="75.0" text="Timer">
+				<cellValueFactory>
+						<PropertyValueFactory property="timer" />
+					</cellValueFactory>
+					</TableColumn>
+			</columns>
+		</TableView>
+		<Button layoutX="374.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#submitClick" text="submit" />
+      <Pagination fx:id="page" layoutX="120.0" layoutY="503.0" maxPageIndicatorCount="5" pageCount="50" prefHeight="68.0" prefWidth="200.0" />
+	</children>
+</AnchorPane>
