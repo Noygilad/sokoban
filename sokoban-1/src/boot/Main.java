@@ -1,6 +1,5 @@
 package boot;
-<<<<<<< HEAD
-//k
+
 import controller.SokobanController;
 import controller.server.MyClientHandler;
 import controller.server.MyServer;
